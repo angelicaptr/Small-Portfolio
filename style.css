@@ -642,3 +642,62 @@ section{
         justify-content: center;
     }
 }
+
+@media (max-width:884px) {
+    
+    /* 1. Mengatur Tata Letak Bagian 'About Me' (Hero Section) */
+    .main-container{
+        display: flex;
+        flex-direction: column; /* Mengubah tata letak horizontal menjadi vertikal */
+    }
+
+    .main-container .content{
+        width: 80%; /* Konten mengambil sebagian besar lebar layar */
+    }
+
+    .main-container .image{
+        width: 80%;
+        margin-bottom: 0px;
+    }
+    
+    /* 2. Mengatur Ulang Tata Letak Grid (Skills, Projects, Certifications) */
+    .skills-grid {
+        grid-template-columns: 1fr; /* Semua Skills menjadi 1 kolom */
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr; /* Semua Certifications menjadi 1 kolom */
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr; /* Semua Projects menjadi 1 kolom */
+    }
+
+    /* 3. Penyesuaian Navigasi (Hamburger Menu) */
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+        z-index: 101;
+    }
+    .nav-container .links{
+        display: none; /* Sembunyikan link di navbar utama */
+    }
+    .hamburg,.cancel{
+        display: block; /* Tampilkan ikon hamburger */
+        z-index: 101;
+    }
+    
+    /* 4. Menyesuaikan Padding dan Tombol */
+    .portfolio-section {
+        padding: 50px 5%; /* Padding lebih kecil di HP */
+    }
+}
+
+@media (max-width: 600px) {
+    .content-download-btn {
+        width: 80%; 
+        margin: 20px auto;
+    }
+}
