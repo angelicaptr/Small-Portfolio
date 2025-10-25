@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Angelica's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Angelica Putri Andrea Simatupang</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About Me</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">My Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">My Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section id="about">
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="main.JPG" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Angelica</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A dedicated 5th-semester Computer Science student at Diponegoro University. I am now focusing on learning web development. I am planning to pivot my learning path toward the critical field of Cybersecurity, showing a strong commitment to master new skills and secure digital environments.</p>
+                
+                    <div class="flex flex-col md:flex-row md:items-center gap-4 mt-4"> 
+                    
+                        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                            <a href="CV_Angelica_Putri.pdf" download class="content-download-btn">Download CV <i class="fa-solid fa-download ml-2"></i></a>
+                        </div>
+
+                        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                            <a href="https://github.com/angelicaptr" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/angelica-putri-andrea-simatupang-7739082a3/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="portfolio-section w-full px-5 py-20 min-h-screen">
+            <div class="section-container max-w-6xl mx-auto text-center">
+                <h2>My Skills</h2>                
+                <div class="skills-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    
+                    <div class="skills-category bg-white p-6 rounded-xl shadow-xl border-t-4 border-[#6d4300] col-span-1">
+                        <h3 class="text-2xl font-bold mb-5 border-b-2 border-[#6d4300] pb-2 text-gray-800">
+                            <i class="fa-solid fa-code text-[#6d4300] mr-2"></i> Core Programming
+                        </h3>
+                        <div class="skill-list flex flex-wrap justify-center gap-6">
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-js text-3xl text-yellow-500"></i>
+                                </div> 
+                                <p class="text-sm font-medium mt-1">JavaScript</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-html5 text-3xl text-orange-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">HTML</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-css3-alt text-3xl text-blue-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">CSS</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-python text-3xl text-indigo-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Python</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-blue-200 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <p class="text-xl font-bold text-blue-800">C++</p>
+                                </div>
+                                <p class="text-sm font-medium mt-1">C/C++</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category bg-white p-6 rounded-xl shadow-xl border-t-4 border-[#6d4300] col-span-1">
+                        <h3 class="text-2xl font-bold mb-5 border-b-2 border-[#6d4300] pb-2 text-gray-800">
+                            <i class="fa-solid fa-server text-[#6d4300] mr-2"></i> Backend & Database
+                        </h3>
+                        <div class="skill-list flex flex-wrap justify-center gap-6">
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-php text-3xl text-purple-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">PHP</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-laravel text-3xl text-red-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Laravel</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-node-js text-3xl text-green-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Node.js</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-solid fa-database text-3xl text-indigo-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category bg-white p-6 rounded-xl shadow-xl border-t-4 border-[#6d4300] col-span-1">
+                        <h3 class="text-2xl font-bold mb-5 border-b-2 border-[#6d4300] pb-2 text-gray-800">
+                            <i class="fa-solid fa-wrench text-[#6d4300] mr-2"></i> Tools & Methodology
+                        </h3>
+                        <div class="skill-list flex flex-wrap justify-center gap-6">
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-cyan-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <p class="text-xl font-bold text-cyan-500">TLW</p>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Tailwind CSS</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-pink-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-figma text-3xl text-pink-500"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Figma</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-solid fa-palette text-3xl text-purple-600"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Canva</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-brands fa-github text-3xl text-gray-800"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">GitHub</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-blue-200 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <p class="text-xl font-bold text-blue-700">VS</p>
+                                </div>
+                                <p class="text-sm font-medium mt-1">VS Code</p>
+                            </div>
+                            <div class="skill-item text-center w-20 transform hover:scale-110 transition duration-200">
+                                <div class="skill-logo w-14 h-14 bg-green-200 rounded-lg flex items-center justify-center mx-auto shadow-md">
+                                    <i class="fa-solid fa-people-carry-box text-2xl text-green-700"></i>
+                                </div>
+                                <p class="text-sm font-medium mt-1">Scrum</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category col-span-1 md:col-span-2 lg:col-span-3 bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#6d4300] mt-8">
+                        <h3 class="text-2xl font-bold mb-8 border-b-2 border-[#6d4300] pb-2 text-gray-800">
+                            <i class="fa-solid fa-certificate text-[#6d4300] mr-2"></i> Certifications
+                        </h3>
+                        <div class="certifications-grid grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            
+                            <div class="cert-item bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                <i class="fa-solid fa-network-wired text-4xl text-gray-700 mb-3"></i>
+                                <h4 class="text-xl font-bold mb-1">Networking Basics</h4>
+                                <p class="text-sm text-gray-600 mb-1">Cisco Networking Academy</p>
+                                <p class="text-sm text-gray-500 mb-3">(Issued: April 2025)</p>
+                                <a href="https://drive.google.com/file/d/1Twy-gk7Xk4Ei3hDNjRrp5z1BJOK1Xe7k/view?usp=drive_link" target="_blank" class="text-[#6d4300] hover:underline font-semibold text-sm">
+                                    View Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="cert-item bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                <i class="fa-solid fa-database text-4xl text-red-600 mb-3"></i>
+                                <h4 class="text-xl font-bold mb-1">Database Programming with SQL</h4>
+                                <p class="text-sm text-gray-600 mb-1">Oracle Academy</p>
+                                <p class="text-sm text-gray-500 mb-3">(Completed: June 2025)</p>
+                                <a href="https://drive.google.com/file/d/1c7lDZSTgLVrcs6E7e9aJakZ6y-p_qqJf/view?usp=sharing" target="_blank" class="text-[#6d4300] hover:underline font-semibold text-sm">
+                                    View Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+
+                            <div class="cert-item bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                <i class="fa-solid fa-diagram-project text-4xl text-red-600 mb-3"></i>
+                                <h4 class="text-xl font-bold mb-1">Database Design</h4>
+                                <p class="text-sm text-gray-600 mb-1">Oracle Academy</p>
+                                <p class="text-sm text-gray-500 mb-3">(Completed: November 2024)</p>
+                                <a href="https://drive.google.com/file/d/1GB8uBgIkd-dfJeZwfjmY8SkztHp29Ued/view?usp=drive_link" target="_blank" class="text-[#6d4300] hover:underline font-semibold text-sm">
+                                    View Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="portfolio-section">
+            <div class="section-container">
+                <h2>My Projects</h2>
+                
+                <div class="projects-grid">
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/web-loope-mockup.jpg" alt="Tangkapan Layar Proyek Web Loope" class="project-image">
+                        
+                        <h3>Web Loope</h3>
+                        <p class="project-description">This group project focuses on developing an E-commerce Platform for Small Business Knitted Products, involving robust database integration, secure user authentication, and dynamic product display.</p>
+                        
+                        <div class="project-stack">
+                            <i class="fa-brands fa-laravel" title="Laravel"></i>
+                            <i class="fa-brands fa-css3-alt" title="Tailwind CSS"></i>
+                            <i class="fa-solid fa-bolt" title="Vite"></i> <i class="fa-brands fa-php" title="PHP"></i>
+                            <i class="fa-solid fa-database" title="MySQL"></i>
+                        </div>
+                        
+                        <div class="cta-buttons">
+                            <a href="URL_GITHUB_LOOPE" target="_blank" class="cta-btn github-btn">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="images/WaterWarriors.png" alt="rototipe Water Warriors" class="project-image">
+                        
+                        <h3>Water Warriors</h3>
+                        <p class="project-description">Prototipe UI/UX untuk aplikasi mobile yang berfokus pada pelestarian sumber air dan edukasi lingkungan.</p>
+                        
+                        <div class="project-stack">
+                            <i class="fa-brands fa-figma" title="Figma"></i>
+                        </div>
+                        
+                        <div class="cta-buttons">
+                            <a href="https://www.figma.com/proto/08Pke3GfqjNSEuDfaeOHO1/Project-IMK--Copy-?node-id=268-87&p=f&t=XctLe8oBtdUvc00E-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=268%3A87" target="_blank" class="cta-btn figma-btn">
+                                <i class="fa-brands fa-figma"></i> View Prototype
+                            </a>
+                        </div>
+                    </div>
+
+                            
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <img src="images/BeliDongBos.png" alt="Desain Interface BeliDongBos" class="project-image">
+                        
+                        <h3>BeliDongBos</h3>
+                        <p class="project-description">Desain UI untuk platform e-commerce khusus mahasiswa.</p>
+                        
+                        <div class="project-stack">
+                            <i class="fa-brands fa-figma" title="Figma"></i>
+                            <i class="fa-solid fa-pencil-ruler" title="UI/UX Design"></i>
+                        </div>
+                        
+                        <div class="cta-buttons">
+                            <a href="https://www.figma.com/proto/JhFltg86pg7nsjpRjLpZlx/BeliDongBos?node-id=45-31&p=f&t=x0S7xf1ZxSQTAnwg-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" class="cta-btn figma-btn">
+                                <i class="fa-brands fa-figma"></i> View Design
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                        <img src="images/SimplePortfolio.png" alt="Portofolio Pribadi" class="project-image">
+                        
+                        <h3>Simple Personal Portfolio</h3>
+                        <p class="project-description">Website portofolio pribadi ini. Menampilkan keahlian dalam HTML, CSS *custom*, JavaScript, dan penggunaan perpustakaan eksternal (AOS).</p>
+                        
+                        <div class="project-stack">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                            <i class="fa-brands fa-js" title="JavaScript"></i>
+                            
+                        </div>
+                        
+                    <div class="cta-buttons">
+                            <a href="URL_GITHUB_PORTFOLIO" target="_blank" class="cta-btn github-btn">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                            <a href="#about" class="cta-btn current-btn">
+                                <i class="fa-solid fa-arrow-up"></i> You Are Here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="portfolio-section">
+            <div class="section-container max-w-4xl mx-auto">
+                <h2>Contact Me</h2>
+                <p class="text-gray-700 mb-12">Tertarik untuk berkolaborasi atau ingin bertanya lebih lanjut? Kirimkan saya pesan melalui formulir di bawah ini atau hubungi saya langsung.</p>
+                
+                <div class="contact-content grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+                    
+                    <div class="contact-form bg-white p-8 rounded-xl shadow-xl border-t-4 border-[#6d4300]">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-3">Send a Message</h3>
+                        
+                        <form action="https://formspree.io/f/xdkpnyoa" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-[#6d4300] focus:border-[#6d4300]">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="_replyto" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-[#6d4300] focus:border-[#6d4300]">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-[#6d4300] focus:border-[#6d4300]"></textarea>
+                            </div>
+                            
+                            <button type="submit" name="submit" class="w-full bg-[#6d4300] text-white py-2 rounded-md font-semibold hover:bg-[#8b5e28] transition duration-200">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-details p-8 rounded-xl">
+    
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-3">My Contacts</h3> 
+                        
+                        <div class="detail-item mb-6">
+                            <i class="fa-solid fa-envelope text-2xl text-[#6d4300] mr-4"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">Email Address</p>
+                                <a href="mailto:angelicaputrias@gmailcom" class="text-black hover:text-[#6d4300] transition duration-200">angelicaputrias@gmailcom</a>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item mb-6">
+                            <i class="fa-solid fa-phone text-2xl text-[#6d4300] mr-4"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">Phone Number</p>
+                                <a href="tel:+6281269428654" class="text-black hover:text-[#6d4300] transition duration-200">+62 812 6942 8654</a>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item mb-6">
+                            <i class="fa-solid fa-location-dot text-2xl text-[#6d4300] mr-4"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">Location</p>
+                                <p class="text-black">Semarang, Central Java, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mt-10 mb-6 text-gray-800 border-b pb-3">Find Me</h3>
+                        <div class="social-links-lg flex gap-4">
+                            <a href="https://github.com/angelicaptr" target="_blank" class="text-[#6d4300] hover:text-gray-700 transition duration-200">
+                                <i class="fa-brands fa-github text-4xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/angelica-putri-andrea-simatupang-7739082a3/" target="_blank" class="text-[#6d4300] hover:text-blue-700 transition duration-200">
+                                <i class="fa-brands fa-linkedin text-4xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/angelicaptr._/" target="_blank" class="text-[#6d4300] hover:text-pink-600 transition duration-200">
+                                <i class="fa-brands fa-instagram text-4xl"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
